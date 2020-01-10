@@ -2,11 +2,24 @@
 
 *Piping and Redirection*
 1. Create a new file named out1, which contains the calendar for this month. (output redirection, use cal command)
+touch out1
+cal > out1
+
 2. To the same file, append today’s date (using date command).
+date >> out1
+
 3. Display the contents of this file.
+cat out1
+
 4. Display the last 3 lines of this file.
+tail -n 3 out1
+
 5. Display the lines 3 to 7. (Piping)
+sed -n '3,7p;8q' out1
+
 6. Display the number of lines in the output of task 5, using piping.
+ls -1 | wc -l out1
+
 7. Using the echo command, write the string “This day is awesome.” in new file called “out2”.
 8. Print the number of words in the file “out2”.
 9. Append the line “I am looking forward to the day.” in the same file (using echo).
