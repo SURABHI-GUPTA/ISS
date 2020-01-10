@@ -21,9 +21,16 @@ sed -n '3,7p;8q' out1
 ls -1 | wc -l out1
 
 7. Using the echo command, write the string “This day is awesome.” in new file called “out2”.
+echo "This day is awesome." > out2
+
 8. Print the number of words in the file “out2”.
+ls -1 | wc -l out2
+
 9. Append the line “I am looking forward to the day.” in the same file (using echo).
+echo "I am looking forward to the day." >> out2
+
 10. Print the number of lines in the file “out2”.
+ls -1 | wc -l out2
 
 Add all the commands used in the above 10 tasks chronologically in a file named "ans.txt". 
 
